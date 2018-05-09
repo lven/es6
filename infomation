@@ -1,8 +1,14 @@
 1.cmd 中 push 时 ，需要输入账号密码。
-两种可能性
-其一：公钥私钥配置不完善
-其二：remote方式不是ssh
-检查remotes方式：git remote -v
+    两种可能性
+    其一：公钥私钥配置不完善
+    其二：remote方式不是ssh
+    检查remotes方式：git remote -v
 
-如果当前是https的，那么可以通过如下命令修改为ssh：
-git remote set-url origin git@github.com:lven/es6.git
+    如果当前是https的，那么可以通过如下命令修改为ssh：
+    git remote set-url origin git@github.com:lven/es6.git
+
+    报错：
+    E:\front-end\es6>git push
+    The authenticity of host 'github.com (52.74.223.119)' can't be established.
+    RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+    Are you sure you want to continue connecting (yes/no)?
